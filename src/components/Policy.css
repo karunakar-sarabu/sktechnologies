@@ -1,0 +1,13 @@
+.policy-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 30px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.policy-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #2e3a59;
+}

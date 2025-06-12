@@ -1,0 +1,82 @@
+
+.about-container
+ {
+  max-width: 800px;
+  margin: auto;
+  padding: 0px 20px 40px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 1200px;
+  line-height: 1.6;
+}
+
+.about-container h1
+ {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+/* .about-container {
+  padding: 60px 30px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+} */
+
+.about-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #2e3a59;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+/* .why-choose-us {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.why-choose-us li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+} */
+.why-choose-us {
+  list-style: none;          /* ✅ Removes bullets */
+  padding-left: 0;           /* ✅ Removes left spacing */
+  margin-bottom: 30px;
+}
+
+.why-choose-us li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  padding-left: 0;
+}
+
+.team-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-member {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.team-member h4 {
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.team-member p {
+  color: #555;
+}
