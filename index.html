@@ -3,95 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe | Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">JD</a>
-            <ul class="nav-links">
+    <header>
+        <nav>
+            <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>I'm John Doe, a Web Developer.</h1>
-                <p>I create beautiful and functional websites for businesses of all sizes.</p>
-                <a href="#contact" class="btn">Get in Touch</a>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section id="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a web developer passionate about creating beautiful and functional websites.</p>
+        </section>
 
-    <section id="about" class="about">
-        <div class="container">
+        <section id="about">
             <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate web developer with a knack for creating clean, elegant, and efficient code. I have a strong background in front-end development and a love for building user-friendly experiences.</p>
-                    <p>When I'm not coding, you can find me exploring the latest design trends, reading a good book, or hiking in the mountains.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://picsum.photos/400/400" alt="John Doe">
-                </div>
-            </div>
-        </div>
-    </section>
+            <p>I am a self-taught web developer with a passion for learning and problem-solving. I have experience with a variety of technologies and I am always looking for new challenges.</p>
+        </section>
 
-    <section id="work" class="work">
-        <div class="container">
-            <h2>My Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <img src="https://picsum.photos/500/350?random=1" alt="Project 1">
-                    <div class="work-item-overlay">
-                        <h3>Project 1</h3>
-                        <p>A short description of the project.</p>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <img src="https://picsum.photos/500/350?random=2" alt="Project 2">
-                    <div class="work-item-overlay">
-                        <h3>Project 2</h3>
-                        <p>A short description of the project.</p>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <img src="https://picsum.photos/500/350?random=3" alt="Project 3">
-                    <div class="work-item-overlay">
-                        <h3>Project 3</h3>
-                        <p>A short description of the project.</p>
-                    </div>
-                </div>
-                <div class="work-item">
-                    <img src="https://picsum.photos/500/350?random=4" alt="Project 4">
-                    <div class="work-item-overlay">
-                        <h3>Project 4</h3>
-                        <p>A short description of the project.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article class="project">
+                <h3>Project 1</h3>
+                <p>A description of my first project.</p>
+            </article>
+            <article class="project">
+                <h3>Project 2</h3>
+                <p>A description of my second project.</p>
+            </article>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
-            <a href="mailto:johndoe@example.com" class="btn">Email Me</a>
-        </div>
-    </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 John Doe. All Rights Reserved.</p>
-        </div>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Name</p>
     </footer>
 </body>
 </html>
