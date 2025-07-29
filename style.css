@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
 /* General Styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -14,13 +20,14 @@ body {
 
 /* Header */
 header {
-    background-color: tomato;
+    background-color: #343a40;
     color: #fff;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header nav {
@@ -61,6 +68,22 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
+#hero {
+    background-image: url('https://via.placeholder.com/1500x800');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
 section#about {
     padding-top: 80px; /* Adjust for fixed header */
 }
@@ -82,6 +105,12 @@ h1, h2 {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* Contact Form */
@@ -92,19 +121,38 @@ h1, h2 {
     margin: 0 auto;
 }
 
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
 #contact-form input,
 #contact-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
     border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 #contact-form button {
     padding: 10px;
-    background-color: #333;
+    background-color: #20c997;
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #17a2b8;
 }
 
 /* Footer */

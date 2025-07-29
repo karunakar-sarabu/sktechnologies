@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -18,10 +19,17 @@
         </nav>
     </header>
 
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>A passionate web developer creating beautiful and functional websites.</p>
+        </div>
+    </section>
+
     <section id="about">
         <div class="container">
-            <h1>About Me</h1>
-            <p>Welcome to my portfolio! I am a passionate web developer with experience in creating beautiful and functional websites.</p>
+            <h2>About Me</h2>
+            <p>I am a dedicated and enthusiastic web developer with a strong foundation in front-end and back-end technologies. My goal is to create user-friendly and visually appealing websites that provide a seamless user experience. I am always eager to learn new technologies and improve my skills.</p>
         </div>
     </section>
 
@@ -49,9 +57,18 @@
         <div class="container">
             <h2>Contact Me</h2>
             <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-comment-dots"></i>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
                 <button type="submit">Send Message</button>
             </form>
         </div>
