@@ -3,81 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>John Doe | Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#" class="logo">MyLogo</a>
-            <ul>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">JD</a>
+            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>A passionate web developer creating beautiful and functional websites.</p>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>I'm John Doe, a Web Developer.</h1>
+                <p>I create beautiful and functional websites for businesses of all sizes.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a dedicated and enthusiastic web developer with a strong foundation in front-end and back-end technologies. My goal is to create user-friendly and visually appealing websites that provide a seamless user experience. I am always eager to learn new technologies and improve my skills.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>A brief description of my first project.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate web developer with a knack for creating clean, elegant, and efficient code. I have a strong background in front-end development and a love for building user-friendly experiences.</p>
+                    <p>When I'm not coding, you can find me exploring the latest design trends, reading a good book, or hiking in the mountains.</p>
                 </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>A brief description of my second project.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>A brief description of my third project.</p>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400" alt="John Doe">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="work" class="work">
         <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="name" placeholder="Your Name" required>
+            <h2>My Work</h2>
+            <div class="work-grid">
+                <div class="work-item">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 1">
+                    <div class="work-item-overlay">
+                        <h3>Project 1</h3>
+                        <p>A short description of the project.</p>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                <div class="work-item">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 2">
+                    <div class="work-item-overlay">
+                        <h3>Project 2</h3>
+                        <p>A short description of the project.</p>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <i class="fas fa-comment-dots"></i>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
+                <div class="work-item">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 3">
+                    <div class="work-item-overlay">
+                        <h3>Project 3</h3>
+                        <p>A short description of the project.</p>
+                    </div>
                 </div>
-                <button type="submit">Send Message</button>
-            </form>
+                <div class="work-item">
+                    <img src="https://via.placeholder.com/500x350" alt="Project 4">
+                    <div class="work-item-overlay">
+                        <h3>Project 4</h3>
+                        <p>A short description of the project.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>I'm always open to discussing new projects or opportunities. Feel free to reach out!</p>
+            <a href="mailto:johndoe@example.com" class="btn">Email Me</a>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Doe. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
